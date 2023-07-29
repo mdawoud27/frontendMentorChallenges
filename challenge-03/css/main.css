@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+}
+
+body {
+    font-family: "Outfit", "Open Sans";
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 22rem;
+    box-shadow: 1px 19px 5rem 0rem rgb(0 0 0 / 75%);
+}
+
+.imges {
+    position: relative;
+}
+.main-pic {
+    width: 100%;
+    display: block;
+}
+
+.alt-pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.alt-pic img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imges:hover .alt-pic {
+    display: block;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.text h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.text .main-pargraph {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.6rem;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.time .c-time {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time .tt {
+    color: hsl(178, 100%, 50%);
+    padding-left: 0.4rem;
+    font-weight: 600;
+}
+
+.time .o-time {
+    color: hsl(215, 51%, 70%);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.o-time img {
+    display: inline-block;
+    padding-right: 0.4rem;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+    border-top-color: transparent;
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+    padding-top: 1.2rem;
+}
+
+.person-info .p-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.p-info {
+    padding-left: 1rem;
+}
+
+.person-info .p-info {
+    color: hsl(215, 51%, 70%);
+}
+
+.p-info span {
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s ease;
+}
+
+.p-info span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
