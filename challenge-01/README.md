@@ -1,8 +1,8 @@
 ## QR code component
 
-### [Challenge Link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+### [Challenge Link.](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
-### [Live Demo](https://challenge-one-neon.vercel.app/).
+### [Live Demo.](https://challenge-one-neon.vercel.app/)
 
 ## 📝Brief
 
