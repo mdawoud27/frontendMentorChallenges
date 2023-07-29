@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 570px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.container .card {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card img {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+.card .text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text .perfume {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.text .head-txt {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+.text .head-txt + p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.c-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+.o-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 12px 0;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(158, 55%, 27%);
+}
+
+button .icon {
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 628px) {
+    .container {
+        margin: 30px auto;
+        max-width: 500px;
+    }
+    .container .card {
+        flex-direction: column;
+    }
+    .card .pp {
+        max-height: 390px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .perfume, .head-txt, .head-txt + p, .price {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        margin: 15px auto;
+        max-width: 500px;
+    }
+    .card .pp {
+        max-height: 280px;
+        /* width: 100%;
+        object-fit: cover; */
+    }
+    .card {
+        padding: 15px;
+    }
+    .perfume, .head-txt, .price {
+        padding-bottom: 16px;
+    }
+    .head-txt {
+        font-size: 20px;
+    }
+    .head-txt + p {
+        font-size: 12px;
+    }
+
+    .c-price {
+        font-size: 23px;
+    }
+    button {
+        padding: 12px 0;
+        font-size: 13px;
+    }
+}
